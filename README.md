@@ -1,4 +1,3 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?multiline=true&width=500&lines=Dev:+Optimization+Fanatic.++++++++++)](https://git.io/typing-svg)
 <h2 align="center">Hi there 👋, I'm Mikenrafter!</h2>
 
 
@@ -7,11 +6,6 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mikenrafter&layout=compact&show_icons=true&theme=nord&count_private=true&exclude_repo=xmonad,xmonad-contrib)
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=mikenrafter&theme=nord&hide_border=true)
-
-## Repos
-
--- to be filled out soon (I mainly use GitLab) --
-
 
 **Languages and Tools:**  
 
