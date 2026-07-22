@@ -1,4 +1,6 @@
-<h2 align="center">Hi there 👋, I'm Mikenrafter!</h2>
+<h2 align="center">Hi there 👋</h2>
+
+<p>The human mind is cool, but what if it could be cooler? 😎 I aim to non-invasively enhance cognition.</p>
 
 **Languages and Tools:**  
 
