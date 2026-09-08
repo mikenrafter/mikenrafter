@@ -14,7 +14,7 @@
 
 I’m a full-stack, AI-native engineer, systems thinker, autodidact and polypath. I seek to leverage technology to enhance the human mind and help humanity reach pinnacles none before have reached! I cherish my role, no matter its size in the end. Follow me if that sounds interesting to you.
 
-I am particularly interested in edtech (both in & outside the classroom), knowledge management systems, AI skill enhancement, devex and devops, homeservers and self sovreignty, and frankly, a lot more. My starred repos will attest to that.
+I am particularly interested in edtech (both in & outside the classroom), knowledge management systems, AI skill enhancement, devex and devops, homeservers and self sovereignty, and frankly, a lot more. My starred repos will attest to that.
 
 Learning happens faster in public, and when gathering diverse perspectives. **I like to be challenged 😋**
 
@@ -51,9 +51,9 @@ Learning happens faster in public, and when gathering diverse perspectives. **I 
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mikenrafter/mikenrafter/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mikenrafter/mikenrafter/output/github-contribution-grid-snake.svg" />
-    <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/mikenrafter/mikenrafter/output/github-contribution-grid-snake.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="./output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub contribution grid snake animation" src="./output/github-contribution-grid-snake.svg" />
   </picture>
 </div>
 
