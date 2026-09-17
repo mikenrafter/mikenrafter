@@ -77,6 +77,7 @@
                   echo "graph-snake: invariant violated: expected zero unpushed commits on main before snake commit, found ''${ahead_before}" >&2
                   exit 1
                 fi
+                ${git} merge --ff-only --quiet origin/main
                 ${pkgs.coreutils}/bin/mkdir -p ${lib.escapeShellArg outputDir}
                 token="$(${gh} auth token --hostname github.com)"
                 ${pkgs.podman}/bin/podman run --rm --userns=keep-id \
@@ -118,8 +119,31 @@
                   echo "graph-snake: invariant violated: expected exactly one commit to push, found ''${ahead}" >&2
                   exit 1
                 fi
-                ${git} push --quiet "https://x-access-token:''${token}@github.com/${options.githubRepo}.git" HEAD:main
-                echo "graph-snake: pushed one commit on main with only snake SVG changes."
+                push_url="https://x-access-token:''${token}@github.com/${options.githubRepo}.git"
+                for attempt in 1 2 3; do
+                  if ${git} push --quiet "$push_url" HEAD:main; then
+                    echo "graph-snake: pushed one commit on main with only snake SVG changes."
+                    exit 0
+                  fi
+                  if [ "$attempt" -eq 3 ]; then
+                    echo "graph-snake: push failed after three attempts." >&2
+                    exit 1
+                  fi
+                  echo "graph-snake: main moved during push, rebasing generated commit and retrying (attempt $((attempt + 1))/3)." >&2
+                  ${git} fetch --quiet origin main
+                  ahead_after_fetch="$(${git} rev-list --count origin/main..HEAD)"
+                  if [ "$ahead_after_fetch" -ne 1 ]; then
+                    echo "graph-snake: invariant violated: expected exactly one generated commit after refetch, found ''${ahead_after_fetch}" >&2
+                    exit 1
+                  fi
+                  ${git} rebase --quiet origin/main
+                  while IFS= read -r path; do
+                    if [ "$path" != "$rel_light" ] && [ "$path" != "$rel_dark" ]; then
+                      echo "graph-snake: invariant violated: rebased commit includes unexpected path: ''${path}" >&2
+                      exit 1
+                    fi
+                  done < <(${git} diff-tree --no-commit-id --name-only -r HEAD)
+                done
               '';
             in {
               exports.generator = snakeGenerator;
