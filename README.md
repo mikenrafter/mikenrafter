@@ -33,8 +33,10 @@ Learning happens faster in public, and when gathering diverse perspectives. **I 
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=idea,visualstudio,linux,nix,haskell,bash,ts,angular,react,jquery&theme=dark" alt="JetBrains IntelliJ IDEA, Visual Studio, Linux, NixOS, Haskell, Bash, TypeScript, Angular, React, and jQuery" />
+  <br />
   <sub>AI-native development · Test-driven development · DevOps · DevEx</sub>
   <img src="https://skillicons.dev/icons?i=cs,dotnet,python,java,sqlite,git,github,azure,blender,obsidian&theme=dark" alt="C#, .NET, Python, Java, SQLite, Git, GitHub, Azure, Blender, and Obsidian" />
+  <br />
   <sub>Legibility · Observability · Security · Maintainability</sub>
 </div>
 
