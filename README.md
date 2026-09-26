@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/mikenrafter">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=620&lines=mikenrafter;Full-stack+AI-native+engineer" alt="mikenrafter. Full-stack AI-native engineer." />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=620&lines=Tyler Slaugher;Full-stack+AI-native+engineer" alt="Tyler Slaugher. Full-stack AI-native engineer." />
   </a>
   <br />
   <a href="https://github.com/mikenrafter"><img src="https://img.shields.io/badge/GitHub-mikenrafter-181717?style=for-the-badge&logo=github" alt="GitHub profile" /></a>
